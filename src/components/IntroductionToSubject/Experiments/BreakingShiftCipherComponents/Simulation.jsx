@@ -91,7 +91,9 @@ const Simulation = () => {
             <div className='container my-4'>
                 <div className="mb-3 row">
                     <label htmlFor="exampleFormControlInput1" className="form-label">Cipher text to be decrypted</label>
-                    <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" value={encrypt(sentenceKeyPairs[Index].sentence, sentenceKeyPairs[Index].key)}></textarea>
+                    <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" onChange={() => {
+
+                    }} value={encrypt(sentenceKeyPairs[Index].sentence, sentenceKeyPairs[Index].key)}></textarea>
                     <button className='btn btn-primary col-3 my-2' onClick={() => {
                         setIndex(Index => (Index + 1) % 5);
                     }}>Next ciphertext</button>
@@ -164,33 +166,12 @@ const Simulation = () => {
                         </select>
                     </div>
                     <button className='btn btn-primary col-3 my-2' onClick={() => {
-                        let checker = answerPlainText;
-                        checker = checker.toUpperCase();
-                        let og = sentenceKeyPairs[Index].sentence;
-                        og = og.toUpperCase();
-                        let newchecker = '';
-                        for (let i = 0; i < checker.length; i++) {
-                            if (checker[i] === ' ') continue;
-                            newchecker = newchecker + checker[i];
-                        }
-                        let newog = '';
-                        for (let i = 0; i < og.length; i++) {
-                            if (!isAlphabet(og[i])) continue;
-                            if (og[i] === ' ') continue;
-                            newog = newog + og[i];
-                        }
-
-                        if (newchecker == newog && answerKey == sentenceKeyPairs[Index].key) {
+                        if (encrypt(answerPlainText, answerKey) === encrypt(sentenceKeyPairs[Index].sentence, sentenceKeyPairs[Index].key)) {
                             notifySuccess();
-
-                            console.log('suvess');
                         }
                         else {
                             notifyDanger();
                         }
-                        console.log(newchecker);
-                        console.log(newog);
-
                     }}>Verify my answer </button>
 
                 </div>
