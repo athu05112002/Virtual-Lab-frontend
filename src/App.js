@@ -1,4 +1,5 @@
 import Home from "./components/Home";
+import BreakingTheMonoAlphabeticSubstitutionCipher from "./components/IntroductionToSubject/Experiments/BreakingTheMonoAlphabeticSubstitutionCipher";
 import BreakingTheShiftCipher from "./components/IntroductionToSubject/Experiments/BreakingTheShiftCipher";
 import Navbar from "./components/Navbar";
 import { Switch, Route, BrowserRouter as Router, Redirect } from 'react-router-dom';
@@ -20,6 +21,9 @@ function App() {
           </Route>
           <Route path='/breakShiftCipher'>
             <BreakingTheShiftCipher />
+          </Route>
+          <Route path='/BreakingTheMonoAlphabeticSubstitutionCipher'>
+            <BreakingTheMonoAlphabeticSubstitutionCipher />
           </Route>
 
         </Switch>

@@ -9,6 +9,7 @@ const ListOfExperiments = () => {
             }}>List of experiments</h2>
             <ol>
                 <li><NavLink className="list-group-item" to='/breakShiftCipher'>Breaking the shift cipher</NavLink></li>
+                <li><NavLink className="list-group-item" to='/BreakingTheMonoAlphabeticSubstitutionCipher'>Breaking The Mono-alphabetic Substitution Cipher</NavLink></li>
             </ol>
 
         </div >
