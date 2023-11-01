@@ -24,7 +24,7 @@ const LoginRegister = () => {
         console.log('tried to login');
         reqData = await reqData.json();
         if (reqData.data) {
-            setauthToken(reqData.data);
+            setauthToken(reqData);
         }
         else {
             window.alert('Please try again with correct credentials');
@@ -34,12 +34,14 @@ const LoginRegister = () => {
 
     }
     const handleRegister = async () => {
+        const url = 'http://localhost:5000/student/login';
         let data = {
             name: name,
             RollNo: rollNo,
             password: password
         }
-        let reqData = await fetch('http://localhost:5000/student/login', {
+
+        let reqData = await fetch(url, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -49,7 +51,7 @@ const LoginRegister = () => {
         console.log('tried to login');
         reqData = await reqData.json();
         if (reqData.data) {
-            setauthToken(reqData.data);
+            setauthToken(reqData);
         }
         else {
             window.alert('Please enter valid name');
@@ -57,7 +59,9 @@ const LoginRegister = () => {
         console.log(reqData);
     }
     return (
+
         <div className='container w-50'>
+
             <div className='mt-4'>
                 <div className="mb-3">
                     <label htmlFor="exampleFormControlInput1" className="form-label">Scholar No</label>
@@ -86,6 +90,7 @@ const LoginRegister = () => {
             </div>
 
         </div>
+
     )
 }
 

@@ -7,7 +7,7 @@ import Procedure from './Procedure';
 import Simulation from './Simulation';
 import Assignment from './Assignment';
 import References from './References';
-import Feedback from './Feedback';
+import Feedback from '../Feedback';
 
 
 

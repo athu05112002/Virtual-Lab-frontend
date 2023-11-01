@@ -12,7 +12,7 @@ const ListOfExperiments = () => {
                 color: 'skyblue'
             }}>List of experiments</h2>
 
-            <table class="table">
+            <table className="table">
                 <thead>
                     <tr>
                         <th scope="col">S.No</th>
@@ -24,18 +24,18 @@ const ListOfExperiments = () => {
                     <tr>
                         <th scope="row">1</th>
                         <td><NavLink className="list-group-item" to='/breakShiftCipher'>Breaking the shift cipher</NavLink></td>
-                        <td>{authToken.user.marks[0]}</td>
+                        <td>{authToken.data.user.marks[0]}</td>
 
                     </tr>
                     <tr>
                         <th scope="row">2</th>
                         <td><NavLink className="list-group-item" to='/BreakingTheMonoAlphabeticSubstitutionCipher'>Breaking The Mono-alphabetic Substitution Cipher</NavLink></td>
-                        <td>{authToken.user.marks[1]}</td>
+                        <td>{authToken.data.user.marks[1]}</td>
                     </tr>
                     <tr>
                         <th scope="row">3</th>
                         <td><NavLink className="list-group-item" to='/OneTimePad'>One-Time Pad and Perfect Secrecy</NavLink></td>
-                        <td>{authToken.user.marks[2]}</td>
+                        <td>{authToken.data.user.marks[2]}</td>
                     </tr>
                 </tbody>
             </table>
