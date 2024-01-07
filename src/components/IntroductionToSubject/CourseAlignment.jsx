@@ -10,7 +10,7 @@ const CourseAlignment = () => {
             <p style={{
                 fontFamily: 'Adobe Fangsong Std R'
             }}>
-                This laboratory is aligned with basic course in cryptography
+                This laboratory is aligned with basic course in Ethical hacking
             </p>
 
         </div>

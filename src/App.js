@@ -7,6 +7,9 @@ import Navbar from "./components/Navbar";
 import { Switch, Route, BrowserRouter as Router, Redirect } from 'react-router-dom';
 import authContext from "./context/authContext";
 import LoginRegister from "./components/LoginRegister";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import PlayfairCipher from "./components/IntroductionToSubject/Experiments/PlayfairCipher";
 
 
 function App() {
@@ -34,6 +37,17 @@ function App() {
           <Route path='/OneTimePad'>
             <OneTimePad />
           </Route>
+          <Route path='/about'>
+            <About />
+          </Route>
+          <Route path='/contact'>
+            <Contact />
+          </Route>
+          <Route path='/playfairCipher'>
+            <PlayfairCipher />
+          </Route>
+
+
         </Switch>
 
       </div>

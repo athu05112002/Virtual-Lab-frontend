@@ -34,14 +34,12 @@ const ListOfExperiments = () => {
                     </tr>
                     <tr>
                         <th scope="row">3</th>
-                        <td><NavLink className="list-group-item" to='/OneTimePad'>One-Time Pad and Perfect Secrecy</NavLink></td>
-                        <td>{authToken.data.user.marks[2]}</td>
+                        <td><NavLink className="list-group-item" to='/playfairCipher'>Playfair Cipher</NavLink></td>
+                        <td>{0}</td>
                     </tr>
+
                 </tbody>
             </table>
-
-
-
         </div >
     )
 }

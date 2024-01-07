@@ -10,15 +10,19 @@ const Introduction = () => {
             <p style={{
                 fontFamily: 'Adobe Fangsong Std R'
             }}>
-                Welcome to the Cryptography Lab!
-                In this virtual laboratory, we embark on a journey
-                to explore the fundamental mathematical underpinnings
-                of cryptography, gain hands-on experience with core cryptographic
-                applications, and hone our skills in designing and analyzing information
-                security protocols. Our mission is to equip you with a deep understanding
-                of cryptography's basic principles and their real-world applications.
-                Join us on this educational adventure and immerse yourself in the world
-                of secure communication and data protection.
+                Welcome to the Ethical Hacking Lab! In this virtual
+                laboratory, we embark on an exciting journey to delve
+                into the dynamic and ever-evolving field of ethical
+                hacking. Our mission is to provide you with a platform
+                to explore the intricate world of cybersecurity, where
+                you'll learn to think like a hacker in order to defend
+                against cyber threats. Throughout this hands-on experience,
+                you will master essential hacking techniques, penetration
+                testing, and vulnerability analysis while always adhering
+                to the highest ethical standards. Join us on this educational
+                adventure and immerse yourself in the realm of cybersecurity,
+                where you'll gain the knowledge and skills to protect digital
+                landscapes and secure valuable data.
             </p>
 
         </div>
