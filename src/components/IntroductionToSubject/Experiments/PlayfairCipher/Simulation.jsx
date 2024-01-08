@@ -3,8 +3,9 @@ import PlayfairMatrix from './PlayfairMatrix'
 
 const Simulation = () => {
     const [Plaintext, setPlaintext] = useState('');
-    const [Keyword, setKeyword] = useState('');
-    
+    const [Keyword, setKeyword] = useState('keyword');
+    const [Ciphertext, setCiphertext] = useState('');
+
 
     return (
 
@@ -22,8 +23,12 @@ const Simulation = () => {
                     console.log(Keyword);
                 }} value={Keyword} />
             </div>
-            <PlayfairMatrix keyword={Keyword} Plaintext={Plaintext} />
-
+            <PlayfairMatrix keyword={Keyword}
+                Plaintext={Plaintext}
+                setCiphertext={setCiphertext}
+                setPlaintext={setPlaintext}
+                Ciphertext={Ciphertext}
+            />
         </div>
     )
 }
