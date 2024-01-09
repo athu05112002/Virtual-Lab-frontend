@@ -15,7 +15,7 @@ const Assignment = () => {
         setUserAnswers(updatedAnswers);
     };
     const notifySuccess = () => {
-        toast.success('😊 Congratulations you successfully submitted the text!', {
+        toast.success('😊 Congratulations you successfully submitted the test!', {
             position: "top-right",
             autoClose: 5000,
             hideProgressBar: false,
@@ -53,9 +53,6 @@ const Assignment = () => {
         console.log(reqData);
         setauthToken(reqData);
         notifySuccess();
-
-
-
         console.log(score);
     };
 

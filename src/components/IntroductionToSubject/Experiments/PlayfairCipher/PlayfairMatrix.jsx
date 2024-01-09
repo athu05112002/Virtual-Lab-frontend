@@ -158,7 +158,7 @@ const PlayfairMatrix = (props) => {
                 setCiphertext(encryptedText);
             }}>Encrypt<i className="fa-solid fa-arrow-down mx-2"></i></button>
             <div class="mb-3">
-                <label for="plain-text" class="form-label">Cipher text</label>
+                <label htmlFor="plain-text" class="form-label">Cipher text</label>
                 <textarea class="form-control" id="plain-text" rows="3" placeholder='Enter your cipher text to be deciphered' onChange={(e) => {
                     setCiphertext(e.target.value);
                 }} value={Ciphertext}></textarea>
